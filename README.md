@@ -11,5 +11,5 @@ version of CESM2 on Oscar.
 To use this repository to create your own ~/.cime directory
 ````
 cd ~
-git clone https://github.com/phall-brown/CIME_Oscar .cime
+git clone https://github.com/brown-ccv/CIME_Oscar .cime
 ````
