@@ -1,4 +1,4 @@
-## Machine-specific XML files for running CESM on Oscar
+## Machine-specific XML files for running CESM2 on Oscar
 
 These are files to place in ~/.cime if you want to install your own
 version of CESM2 on Oscar.  
