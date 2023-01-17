@@ -27,7 +27,7 @@
     <module_system type="none"/>
     <environment_variables>
       <env name="OMP_STACKSIZE">64M</env>
-      <env name="NETCDF_PATH">/gpfs/runtime/opt/netcdf/4.7.4_intel_2020.2_hdf5_1.12.0</env>
+      <env name="NETCDF_PATH">/gpfs/runtime/opt/netcdf/4.9.0_intel_2020.2_hdf5_1.12.2_slurm22</env>
       <env name="MKL_PATH">/gpfs/runtime/opt/intel/2020.2/mkl/lib/intel64</env>
     </environment_variables>
   </machine>
