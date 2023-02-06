@@ -14,3 +14,8 @@ https://esmci.github.io/cime/versions/master/html/users_guide/machine.html#confi
    </SLIBS>
 -->
 
+    <!-- <MPICC>/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpicc</MPICC> -->
+    <!-- <MPIFC>/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpif90</MPIFC> -->
+
+    <!-- <NETCDF_PATH>/cm/shared/apps/netcdf/gcc/64/4.8.1</NETCDF_PATH> -->
+    <!-- <PNETCDF_PATH>/cm/shared/apps/netcdf/gcc/64/4.8.1</PNETCDF_PATH> -->
