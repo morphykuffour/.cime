@@ -1,20 +1,31 @@
 <?xml version="1.0"?>
 
-  <machine MACH="oscar">
+  <machine MACH="uconnhpc">
     <DESC>Oscar RHEL7, batch system is SLURM</DESC>
-    <NODENAME_REGEX>.*.oscar.ccv.brown.edu</NODENAME_REGEX>
+     <!--
+    <NODENAME_REGEX>.*.storrs.hpc.brown.edu</NODENAME_REGEX>
+     -->
+    <NODENAME_REGEX>login*</NODENAME_REGEX>
     <OS>LINUX</OS>
-    <COMPILERS>intel</COMPILERS>
+    <COMPILERS>gnu</COMPILERS>
     <MPILIBS>openmpi</MPILIBS>
-    <CIME_OUTPUT_ROOT>/gpfs/scratch/$USER/cesm</CIME_OUTPUT_ROOT>
-    <DIN_LOC_ROOT>/gpfs/data/shared/cesm/input_data</DIN_LOC_ROOT>
+    <CIME_OUTPUT_ROOT>/gpfs/homefs1/mok18003/CESMDATAROOT</CIME_OUTPUT_ROOT>
+    <DIN_LOC_ROOT>/gpfs/homefs1/mok18003/CESMDATAROOT/inputdata</DIN_LOC_ROOT>
+     <!-- optional input location for clm forcing data -->
+     <!--
     <DIN_LOC_ROOT_CLMFORC>/gpfs/data/shared/cesm/input_data/atm/datm7</DIN_LOC_ROOT_CLMFORC>
-    <DOUT_S_ROOT>/gpfs/home/$USER/data/$USER/cesm/archive/$CASE</DOUT_S_ROOT>
-    <BASELINE_ROOT>/gpfs/scratch/$USER/ccsm_baselines</BASELINE_ROOT>
+     -->
+    <DOUT_S_ROOT>/gpfs/homefs1/$USER/data/$USER/archive/$CASE</DOUT_S_ROOT>
+    <BASELINE_ROOT>/gpfs/scratchfs1/$USER/ccsm_baselines</BASELINE_ROOT>
+     <!--
     <CCSM_CPRNC>/gpfs/scratch/$USER/cesm_tools/ccsm_cprnc/cprnc</CCSM_CPRNC>
+     -->
+
+    <GMAKE>make</GMAKE>
     <GMAKE_J>8</GMAKE_J>
+
     <BATCH_SYSTEM>slurm</BATCH_SYSTEM>
-    <SUPPORTED_BY>phall1</SUPPORTED_BY>
+    <SUPPORTED_BY>Morphy Kuffour</SUPPORTED_BY>
     <MAX_TASKS_PER_NODE>32</MAX_TASKS_PER_NODE>
     <MAX_MPITASKS_PER_NODE>32</MAX_MPITASKS_PER_NODE>
     <mpirun mpilib="default">
@@ -25,11 +36,25 @@
       </arguments>
     </mpirun>
     <module_system type="none"/>
+
     <environment_variables>
       <env name="OMP_STACKSIZE">64M</env>
-      <env name="NETCDF_PATH">/gpfs/runtime/opt/netcdf/4.9.0_intel_2020.2_hdf5_1.12.2_slurm22</env>
-      <env name="MKL_PATH">/gpfs/runtime/opt/intel/2020.2/mkl/lib/intel64</env>
+     <!--
+      <env name="NETCDF_PATH">/cm/shared/apps/netcdf/gcc/64/4.8.1</env>
+      <env name="PNETCDF_PATH">/cm/shared/apps/netcdf/gcc/64/4.8.1</env>
+     -->
+      <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0</env>
+      <env name="PNETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0</env>
+      <env name="MPICC">/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpicc</env>
+      <env name="MPIFC">/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpif90</env>
+      <env name="MKL_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/intel/oneapi/2022.3/mkl/2022.2.0</env>
     </environment_variables>
+    <MPICC>/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpicc</MPICC>
+    <MPIFC>/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpif90</MPIFC>
+
+    <NETCDF_PATH>/cm/shared/apps/netcdf/gcc/64/4.8.1</NETCDF_PATH>
+    <PNETCDF_PATH>/cm/shared/apps/netcdf/gcc/64/4.8.1</PNETCDF_PATH>
+
   </machine>
 
 

@@ -1,0 +1,16 @@
+
+
+<!--
+# intel compiler flags
+https://github.com/brown-ccv/CIME_Oscar/blob/main/config_compilers.xml
+
+# gnu compiler flags
+https://esmci.github.io/cime/versions/master/html/users_guide/machine.html#config-compilers-xml-compiler-paths-and-options-deprecated-use-cmake-macros
+
+   <NETCDF_PATH>/cm/shared/apps/netcdf/gcc/64/4.8.1</NETCDF_PATH>
+   <PNETCDF_PATH>/cm/shared/apps/netcdf/gcc/64/4.8.1</PNETCDF_PATH>
+   <SLIBS>
+        <append>$(shell $(NETCDF_PATH)/bin/nc-config --flibs)</append>
+   </SLIBS>
+-->
+
