@@ -16,4 +16,7 @@
    <FFLAGS>
         <append> -fno-range-check  </append>
    </FFLAGS>
+   <SLIBS>
+        <append>$(shell $(NETCDF_PATH)/bin/nf-config --flibs)</append>
+   </SLIBS>
 </compiler>
