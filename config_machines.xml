@@ -42,8 +42,8 @@
         <cmd_path lang="csh">module</cmd_path>
         <cmd_path lang="python">python</cmd_path>
         <cmd_path lang="perl">perl</cmd_path>
+        <cmd_path lang="python">/usr/bin/modulecmd python</cmd_path>
         <modules>
-            <cmd_path lang="python">/usr/bin/modulecmd python</cmd_path>
             <command name="load">cmake/3.23.2</command>
             <command name="load">pre-module</command>
             <command name="load">post-module</command>
