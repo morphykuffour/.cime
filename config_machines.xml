@@ -1,11 +1,7 @@
 <?xml version="1.0"?>
-
 <config_machines version="2.0">
   <machine MACH="uconnhpc">
-    <DESC>Oscar RHEL7, batch system is SLURM</DESC>
-     <!--
-    <NODENAME_REGEX>.*.storrs.hpc.brown.edu</NODENAME_REGEX>
-     -->
+    <DESC>UConn HPC CESM2.0 Port</DESC>
     <NODENAME_REGEX>login*</NODENAME_REGEX>
     <OS>LINUX</OS>
     <COMPILERS>gnu</COMPILERS>
@@ -65,7 +61,8 @@
 
     <environment_variables>
       <env name="OMP_STACKSIZE">64M</env>
-      <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0</env>
+      <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0-ics</env>
+      <!-- <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0</env> -->
       <!-- <env name="PNETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0</env> -->
       <!-- <env name="MPICC">/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpicc</env> -->
       <!-- <env name="MPIFC">/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpif90</env> -->
