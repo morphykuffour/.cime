@@ -65,30 +65,30 @@
       <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0</env>
       <env name="LD_LIBRARY_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0/lib</env>
 
-      <!-- netcdf-fortran/4.6.0-ics -->   
-      <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0-ics</env>
-      <env name="LD_LIBRARY_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0-ics/lib</env>
+      <!-- <!-1- netcdf-fortran/4.6.0-ics -1-> -->   
+      <!-- <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0-ics</env> -->
+      <!-- <env name="LD_LIBRARY_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0-ics/lib</env> -->
 
-      <!-- netcdf/4.4.1-ics-impi -->      
-      <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.4.1-ics-impi</env>
-      <env name="LD_LIBRARY_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.4.1-ics-impi/lib</env>
+      <!-- <!-1- netcdf/4.4.1-ics-impi -1-> -->      
+      <!-- <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.4.1-ics-impi</env> -->
+      <!-- <env name="LD_LIBRARY_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.4.1-ics-impi/lib</env> -->
 
 
-      <!-- netcdf/4.9.0 -->               
-       <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.9.0<env>
-       <env name="LD_LIBRARY_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.9.0/lib<env>
+      <!-- <!-1- netcdf/4.9.0 -1-> -->               
+      <!--  <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.9.0<env> -->
+      <!--  <env name="LD_LIBRARY_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.9.0/lib<env> -->
 
-      <!-- netcdf/4.9.0-ics -->           
-       <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.9.0-ics<env>
-       <env name="LD_LIBRARY_PATH">gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.9.0-ics/lib<env>
+      <!-- <!-1- netcdf/4.9.0-ics -1-> -->           
+      <!--  <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.9.0-ics<env> -->
+      <!--  <env name="LD_LIBRARY_PATH">gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.9.0-ics/lib<env> -->
 
-      <!-- netcdf/gcc/64/gcc/64/4.7.3 --> 
-       <env name="NETCDF_PATH">/cm/shared/apps/netcdf/gcc/64/4.7.3<env>
-       <env name="LD_LIBRARY_PATH"> /cm/shared/apps/netcdf/gcc/64/4.7.3/lib<env>
+      <!-- <!-1- netcdf/gcc/64/gcc/64/4.7.3 -1-> --> 
+      <!--  <env name="NETCDF_PATH">/cm/shared/apps/netcdf/gcc/64/4.7.3<env> -->
+      <!--  <env name="LD_LIBRARY_PATH"> /cm/shared/apps/netcdf/gcc/64/4.7.3/lib<env> -->
 
-      <!-- netcdf/gcc/64/gcc/64/4.8.1 --> 
-      <env name="NETCDF_PATH">/cm/shared/apps/netcdf/gcc/64/4.8.1</env>
-      <env name="LD_LIBRARY_PATH">/cm/shared/apps/netcdf/gcc/64/4.8.1/lib</env>
+      <!-- <!-1- netcdf/gcc/64/gcc/64/4.8.1 -1-> --> 
+      <!-- <env name="NETCDF_PATH">/cm/shared/apps/netcdf/gcc/64/4.8.1</env> -->
+      <!-- <env name="LD_LIBRARY_PATH">/cm/shared/apps/netcdf/gcc/64/4.8.1/lib</env> -->
 
       <env name="OMP_STACKSIZE">64M</env>
 
