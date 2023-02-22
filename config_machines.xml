@@ -51,9 +51,9 @@
         <!-- <modules compiler="intel"> -->
         <!--     <command name="load">intel-compiler/2020.1.217</command> -->
         <!-- </modules> -->
-        <modules mpilib="openmpi">
-            <command name="load">openmpi</command>
-        </modules>
+        <!-- <modules mpilib="openmpi"> -->
+        <!--     <command name="load">openmpi</command> -->
+        <!-- </modules> -->
         <!-- <modules mpilib="intelmpi"> -->
         <!--     <command name="load">intel-mpi/2020.1.217</command> -->
         <!-- </modules> -->
