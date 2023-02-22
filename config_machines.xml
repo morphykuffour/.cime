@@ -48,8 +48,8 @@
 	<command name="load">netcdf-c</command>
 	<command name="load">netcdf-fortran</command>
 	<command name="load">cmake</command>
-	<command name="load">$ENV{PYTHONMODULE}</command>
-	<command name="load">$ENV{TCSHMODULE}</command>
+	<!-- <command name="load">$ENV{PYTHONMODULE}</command> -->
+	<!-- <command name="load">$ENV{TCSHMODULE}</command> -->
 
 	<!--command name="load">parallel-netcdf-1.12.2-gcc-11.2.0-2enkx7f</command-->
       </modules>
