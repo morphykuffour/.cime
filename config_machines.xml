@@ -45,7 +45,7 @@
         <command name="load">gcc</command>
 	<command name="load">cmake</command>
 	<command name="load">openmpi</command>
-	<command name="load">netcdf-c</command>
+	<!-- <command name="load">netcdf-c</command> -->
 	<command name="load">netcdf-fortran</command>
 	<command name="load">cmake</command>
 	<!-- <command name="load">$ENV{PYTHONMODULE}</command> -->
