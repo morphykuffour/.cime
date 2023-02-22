@@ -5,9 +5,6 @@
       <base> --host=Linux </base>
    </CONFIG_ARGS>
 
-   <NETCDF_PATH>/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0</NETCDF_PATH>
-   <PNETCDF_PATH>/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0</PNETCDF_PATH>
-
    <MPICC>/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpicc</MPICC>
    <MPIFC>/cm/shared/apps/mpich/ge/gcc/64/3.4.2/bin/mpif90</MPIFC>
    <SFC>gfortran</SFC>
