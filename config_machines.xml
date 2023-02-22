@@ -39,19 +39,17 @@
       <cmd_path lang="sh">module</cmd_path>
       <cmd_path lang="csh">module</cmd_path>
       <modules>
-	<command name="purge"/>
+            <command name="purge"/>
       </modules>
       <modules compiler="gnu">
         <command name="load">gcc</command>
-	<command name="load">cmake</command>
-	<command name="load">openmpi</command>
-	<!-- <command name="load">netcdf-c</command> -->
-	<command name="load">netcdf-fortran</command>
-	<command name="load">cmake</command>
-	<!-- <command name="load">$ENV{PYTHONMODULE}</command> -->
-	<!-- <command name="load">$ENV{TCSHMODULE}</command> -->
-
-	<!--command name="load">parallel-netcdf-1.12.2-gcc-11.2.0-2enkx7f</command-->
+        <command name="load">cmake/3.23.2</command>
+        <command name="load">openmpi</command>
+        <command name="load">netcdf-fortran/4.6.0</command>
+        <command name="load">cmake</command>
+        <!-- <command name="load">$ENV{PYTHONMODULE}</command> -->
+        <!-- <command name="load">$ENV{TCSHMODULE}</command> -->
+        <!--command name="load">parallel-netcdf-1.12.2-gcc-11.2.0-2enkx7f</command-->
       </modules>
     </module_system>
     <!-- environment variables, a blank entry will unset a variable -->
