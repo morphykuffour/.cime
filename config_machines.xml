@@ -33,32 +33,36 @@
       </arguments>
     </mpirun>
 
-    <module_system type="module">
-        <cmd_path lang="sh">module</cmd_path>
-        <cmd_path lang="csh">module</cmd_path>
-        <cmd_path lang="python">python</cmd_path>
-        <cmd_path lang="perl">perl</cmd_path>
-        <cmd_path lang="python">/usr/bin/modulecmd python</cmd_path>
-        <modules>
-            <command name="load">cmake/3.23.2</command>
-            <command name="load">pre-module</command>
-            <command name="load">post-module</command>
-            <command name="load">intel/oneapi/2022.3</command>
-            <command name="load">zlib/1.2.12-ics</command>
-            <command name="load">hdf5/1.13.2-ics</command>
-            <command name="load">netcdf-fortran/4.6.0</command>
-        </modules>
-        <!-- <modules compiler="intel"> -->
-        <!--     <command name="load">intel-compiler/2020.1.217</command> -->
-        <!-- </modules> -->
-        <modules mpilib="openmpi">
-            <command name="load">openmpi</command>
-        </modules>
-        <!-- <modules mpilib="intelmpi"> -->
-        <!--     <command name="load">intel-mpi/2020.1.217</command> -->
-        <!-- </modules> -->
+    <module_system type="none">
     </module_system>
+
+    <!-- <module_system type="module"> -->
+    <!--     <cmd_path lang="sh">module</cmd_path> -->
+    <!--     <cmd_path lang="csh">module</cmd_path> -->
+    <!--     <cmd_path lang="python">python</cmd_path> -->
+    <!--     <cmd_path lang="perl">perl</cmd_path> -->
+    <!--     <cmd_path lang="python">/usr/bin/modulecmd python</cmd_path> -->
+    <!--     <modules> -->
+    <!--         <command name="load">cmake/3.23.2</command> -->
+    <!--         <command name="load">pre-module</command> -->
+    <!--         <command name="load">post-module</command> -->
+    <!--         <command name="load">intel/oneapi/2022.3</command> -->
+    <!--         <command name="load">zlib/1.2.12-ics</command> -->
+    <!--         <command name="load">hdf5/1.13.2-ics</command> -->
+    <!--         <command name="load">netcdf-fortran/4.6.0</command> -->
+    <!--     </modules> -->
+    <!--     <!-1- <modules compiler="intel"> -1-> -->
+    <!--     <!-1-     <command name="load">intel-compiler/2020.1.217</command> -1-> -->
+    <!--     <!-1- </modules> -1-> -->
+    <!--     <modules mpilib="openmpi"> -->
+    <!--         <command name="load">openmpi</command> -->
+    <!--     </modules> -->
+    <!--     <!-1- <modules mpilib="intelmpi"> -1-> -->
+    <!--     <!-1-     <command name="load">intel-mpi/2020.1.217</command> -1-> -->
+    <!--     <!-1- </modules> -1-> -->
+    <!-- </module_system> -->
     <!-- <module_system type="none"\> -->
+
     <environment_variables>
 
       <!-- netcdf-fortran/4.6.0 -->
