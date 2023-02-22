@@ -30,12 +30,12 @@
     </mpirun>
 
     <module_system type="module">
-      <init_path lang="perl">/opt/modules/current/init/perl.pm</init_path>
-      <init_path lang="python">/opt/modules/current/init/python.py</init_path>
-      <init_path lang="sh">/opt/modules/current/init/sh</init_path>
-      <init_path lang="csh">/opt/modules/current/init/csh</init_path>
-      <cmd_path lang="perl">/opt/modules/current/bin/modulecmd perl</cmd_path>
-      <cmd_path lang="python">/opt/modules/current/bin/modulecmd python</cmd_path>
+      <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path>
+      <init_path lang="python">/cm/local/apps/environment-modules/current/init/python.py</init_path>
+      <init_path lang="sh">/cm/local/apps/environment-modules/current/init/sh</init_path>
+      <init_path lang="csh">/cm/local/apps/environment-modules/current/init/csh</init_path>
+      <cmd_path lang="perl"> /cm/local/apps/environment-modules/4.5.3/bin/modulecmd perl</cmd_path>
+      <cmd_path lang="python">/cm/local/apps/environment-modules/4.5.3/bin/modulecmd python</cmd_path>
       <cmd_path lang="sh">module</cmd_path>
       <cmd_path lang="csh">module</cmd_path>
       <modules>
