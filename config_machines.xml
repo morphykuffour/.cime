@@ -43,7 +43,7 @@
       </modules>
       <modules compiler="gnu">
         <!-- <command name="load">gcc</command> -->
-        <command name="load">gcc/11.3.0</command>
+        <!-- <command name="load">gcc/11.3.0</command> -->
         <command name="load">cmake/3.23.2</command>
         <command name="load">openmpi</command>
         <command name="load">netcdf-fortran/4.6.0</command>
