@@ -29,41 +29,43 @@
       </arguments>
     </mpirun>
 
-    <module_system type="module">
-      <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path>
-      <init_path lang="python">/cm/local/apps/environment-modules/current/init/python.py</init_path>
-      <init_path lang="sh">/cm/local/apps/environment-modules/current/init/sh</init_path>
-      <init_path lang="csh">/cm/local/apps/environment-modules/current/init/csh</init_path>
-      <cmd_path lang="perl"> /cm/local/apps/environment-modules/4.5.3/bin/modulecmd perl</cmd_path>
-      <cmd_path lang="python">/cm/local/apps/environment-modules/4.5.3/bin/modulecmd python</cmd_path>
-      <cmd_path lang="sh">module</cmd_path>
-      <cmd_path lang="csh">module</cmd_path>
-      <modules>
-            <command name="purge"/>
-      </modules>
-      <!-- <modules compiler="gnu"> -->
-        <!-- <command name="load">gcc</command> -->
-        <!-- <command name="load">gcc/11.3.0</command> -->
-        <!-- <command name="load">cmake/3.23.2</command> -->
-        <!-- <command name="load">openmpi</command> -->
-        <!-- <command name="load">netcdf-fortran</command> -->
-        <!-- <command name="load">cmake</command> -->
-        <!-- <command name="load">$ENV{PYTHONMODULE}</command> -->
-        <!-- <command name="load">$ENV{TCSHMODULE}</command> -->
-        <!--command name="load">parallel-netcdf-1.12.2-gcc-11.2.0-2enkx7f</command-->
-      <!-- </modules> -->
-        <modules>
-            <command name="load">cmake/3.23.2</command>
-            <!-- <command name="load">pre-module</command> -->
-            <!-- <command name="load">post-module</command> -->
-            <!-- <command name="load">intel/oneapi/2022.3</command> -->
-            <!-- <command name="load">zlib/1.2.12-ics</command> -->
-            <!-- <command name="unload">hdf5</command> -->
-            <!-- <command name="load">hdf5/1.13.2-ics</command> -->
-            <!-- <command name="load">netcdf-fortran/4.6.0</command> -->
-            <!-- <command name="load">slurm</command> -->
-        </modules>
-    </module_system>
+    <module_system type="none"\>
+
+    <!--<module_system type="module"> -->
+    <!--  <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path> -->
+    <!--  <init_path lang="python">/cm/local/apps/environment-modules/current/init/python.py</init_path> -->
+    <!--  <init_path lang="sh">/cm/local/apps/environment-modules/current/init/sh</init_path> -->
+    <!--  <init_path lang="csh">/cm/local/apps/environment-modules/current/init/csh</init_path> -->
+    <!--  <cmd_path lang="perl"> /cm/local/apps/environment-modules/4.5.3/bin/modulecmd perl</cmd_path> -->
+    <!--  <cmd_path lang="python">/cm/local/apps/environment-modules/4.5.3/bin/modulecmd python</cmd_path> -->
+    <!--  <cmd_path lang="sh">module</cmd_path> -->
+    <!--  <cmd_path lang="csh">module</cmd_path> -->
+    <!--  <modules> -->
+    <!--        <command name="purge"/> -->
+    <!--  </modules> -->
+    <!--  <!-1- <modules compiler="gnu"> -1-> -->
+    <!--    <!-1- <command name="load">gcc</command> -1-> -->
+    <!--    <!-1- <command name="load">gcc/11.3.0</command> -1-> -->
+    <!--    <!-1- <command name="load">cmake/3.23.2</command> -1-> -->
+    <!--    <!-1- <command name="load">openmpi</command> -1-> -->
+    <!--    <!-1- <command name="load">netcdf-fortran</command> -1-> -->
+    <!--    <!-1- <command name="load">cmake</command> -1-> -->
+    <!--    <!-1- <command name="load">$ENV{PYTHONMODULE}</command> -1-> -->
+    <!--    <!-1- <command name="load">$ENV{TCSHMODULE}</command> -1-> -->
+    <!--    <!-1-command name="load">parallel-netcdf-1.12.2-gcc-11.2.0-2enkx7f</command--> -->
+    <!--  <!-1- </modules> -1-> -->
+    <!--    <modules> -->
+    <!--        <command name="load">cmake/3.23.2</command> -->
+    <!--        <!-1- <command name="load">pre-module</command> -1-> -->
+    <!--        <!-1- <command name="load">post-module</command> -1-> -->
+    <!--        <!-1- <command name="load">intel/oneapi/2022.3</command> -1-> -->
+    <!--        <!-1- <command name="load">zlib/1.2.12-ics</command> -1-> -->
+    <!--        <!-1- <command name="unload">hdf5</command> -1-> -->
+    <!--        <!-1- <command name="load">hdf5/1.13.2-ics</command> -1-> -->
+    <!--        <!-1- <command name="load">netcdf-fortran/4.6.0</command> -1-> -->
+    <!--        <!-1- <command name="load">slurm</command> -1-> -->
+    <!--    </modules> -->
+    <!--</module_system> -->
     <!-- environment variables, a blank entry will unset a variable -->
     <environment_variables>
       <env name="OMP_STACKSIZE">64M</env>
