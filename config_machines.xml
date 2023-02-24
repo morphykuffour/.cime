@@ -41,7 +41,7 @@
       <modules>
             <command name="purge"/>
       </modules>
-      <modules compiler="gnu">
+      <!-- <modules compiler="gnu"> -->
         <!-- <command name="load">gcc</command> -->
         <!-- <command name="load">gcc/11.3.0</command> -->
         <!-- <command name="load">cmake/3.23.2</command> -->
@@ -51,7 +51,7 @@
         <!-- <command name="load">$ENV{PYTHONMODULE}</command> -->
         <!-- <command name="load">$ENV{TCSHMODULE}</command> -->
         <!--command name="load">parallel-netcdf-1.12.2-gcc-11.2.0-2enkx7f</command-->
-      </modules>
+      <!-- </modules> -->
     </module_system>
     <!-- environment variables, a blank entry will unset a variable -->
     <environment_variables>
