@@ -5,7 +5,7 @@
     <NODENAME_REGEX>login*</NODENAME_REGEX>
     <OS>LINUX</OS>
     <COMPILERS>gnu</COMPILERS>
-    <MPILIBS>openmpi</MPILIBS>
+    <MPILIBS>openmpi, mpi-serial</MPILIBS>
     <CIME_OUTPUT_ROOT>/gpfs/homefs1/mok18003/CESMDATAROOT</CIME_OUTPUT_ROOT>
     <DIN_LOC_ROOT>/gpfs/homefs1/mok18003/CESMDATAROOT/inputdata</DIN_LOC_ROOT>
     <DOUT_S_ROOT>/gpfs/homefs1/$USER/data/$USER/archive/$CASE</DOUT_S_ROOT>
@@ -19,6 +19,9 @@
     <SUPPORTED_BY>Morphy Kuffour</SUPPORTED_BY>
     <MAX_TASKS_PER_NODE>32</MAX_TASKS_PER_NODE>
     <MAX_MPITASKS_PER_NODE>32</MAX_MPITASKS_PER_NODE>
+    <mpirun mpilib="mpi-serial">
+      <executable/>
+    </mpirun>
     <mpirun mpilib="default">
       <executable>srun</executable>
       <arguments>
@@ -26,41 +29,31 @@
         <arg name="num_tasks"> -n {{ total_tasks }}</arg>
       </arguments>
     </mpirun>
-    <module_system type="module">
-      <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path>
-      <init_path lang="python">/cm/local/apps/environment-modules/current/init/python.py</init_path>
-      <init_path lang="sh">/cm/local/apps/environment-modules/current/init/sh</init_path>
-      <init_path lang="csh">/cm/local/apps/environment-modules/current/init/csh</init_path>
-      <cmd_path lang="perl"> /cm/local/apps/environment-modules/4.5.3/bin/modulecmd perl</cmd_path>
-      <cmd_path lang="python">/cm/local/apps/environment-modules/4.5.3/bin/modulecmd python</cmd_path>
-      <cmd_path lang="sh">module</cmd_path>
-      <cmd_path lang="csh">module</cmd_path>
-      <modules>
-        <command name="purge"/>
-      </modules>
-      <!-- <modules compiler="gnu"> -->
-      <!-- <command name="load">gcc</command> -->
-      <!-- <command name="load">gcc/11.3.0</command> -->
-      <!-- <command name="load">cmake/3.23.2</command> -->
-      <!-- <command name="load">openmpi</command> -->
-      <!-- <command name="load">netcdf-fortran</command> -->
-      <!-- <command name="load">cmake</command> -->
-      <!-- <command name="load">$ENV{PYTHONMODULE}</command> -->
-      <!-- <command name="load">$ENV{TCSHMODULE}</command> -->
-      <!--command name="load">parallel-netcdf-1.12.2-gcc-11.2.0-2enkx7f</command-->
-      <!-- </modules> -->
-      <modules>
-        <command name="load">cmake/3.23.2</command>
-        <command name="load">pre-module</command>
-        <command name="load">post-module</command>
-        <command name="load">openmpi</command>
-        <command name="load">zlib/1.2.12-ics</command>
-        <command name="unload">hdf5</command>
-        <command name="load">hdf5/1.13.2-ics</command>
-        <command name="load">netcdf-fortran/4.6.0</command>
-        <command name="load">slurm</command>
-      </modules>
-    </module_system>
+    <module_system type="none"/>
+    <!-- <module_system type="module"> -->
+    <!--   <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path> -->
+    <!--   <init_path lang="python">/cm/local/apps/environment-modules/current/init/python.py</init_path> -->
+    <!--   <init_path lang="sh">/cm/local/apps/environment-modules/current/init/sh</init_path> -->
+    <!--   <init_path lang="csh">/cm/local/apps/environment-modules/current/init/csh</init_path> -->
+    <!--   <cmd_path lang="perl"> /cm/local/apps/environment-modules/4.5.3/bin/modulecmd perl</cmd_path> -->
+    <!--   <cmd_path lang="python">/cm/local/apps/environment-modules/4.5.3/bin/modulecmd python</cmd_path> -->
+    <!--   <cmd_path lang="sh">module</cmd_path> -->
+    <!--   <cmd_path lang="csh">module</cmd_path> -->
+    <!--   <modules> -->
+    <!--     <command name="purge"/> -->
+    <!--   </modules> -->
+    <!--   <modules> -->
+    <!--     <command name="load">cmake/3.23.2</command> -->
+    <!--     <command name="load">pre-module</command> -->
+    <!--     <command name="load">post-module</command> -->
+    <!--     <command name="load">openmpi</command> -->
+    <!--     <command name="load">zlib/1.2.12-ics</command> -->
+    <!--     <command name="unload">hdf5</command> -->
+    <!--     <command name="load">hdf5/1.13.2-ics</command> -->
+    <!--     <command name="load">netcdf-fortran/4.6.0</command> -->
+    <!--     <command name="load">slurm</command> -->
+    <!--   </modules> -->
+    <!-- </module_system> -->
     <!-- environment variables, a blank entry will unset a variable -->
     <environment_variables>
       <env name="OMP_STACKSIZE">64M</env>
