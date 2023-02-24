@@ -29,7 +29,10 @@
         <arg name="num_tasks"> -n {{ total_tasks }}</arg>
       </arguments>
     </mpirun>
+
     <module_system type="none"/>
+    </module_system>
+
     <!-- <module_system type="module"> -->
     <!--   <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path> -->
     <!--   <init_path lang="python">/cm/local/apps/environment-modules/current/init/python.py</init_path> -->
