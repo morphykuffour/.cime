@@ -66,6 +66,7 @@
     <!--        <!-1- <command name="load">slurm</command> -1-> -->
     <!--    </modules> -->
     <!--</module_system> -->
+
     <!-- environment variables, a blank entry will unset a variable -->
     <environment_variables>
       <env name="OMP_STACKSIZE">64M</env>
