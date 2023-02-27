@@ -31,7 +31,6 @@
     </mpirun>
 
     <module_system type="none"/>
-    </module_system>
 
     <!-- <module_system type="module"> -->
     <!--   <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path> -->
