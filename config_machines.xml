@@ -30,32 +30,30 @@
       </arguments>
     </mpirun>
 
-    <module_system type="none"/>
-
-    <!-- <module_system type="module"> -->
-    <!--   <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path> -->
-    <!--   <init_path lang="python">/cm/local/apps/environment-modules/current/init/python.py</init_path> -->
-    <!--   <init_path lang="sh">/cm/local/apps/environment-modules/current/init/sh</init_path> -->
-    <!--   <init_path lang="csh">/cm/local/apps/environment-modules/current/init/csh</init_path> -->
-    <!--   <cmd_path lang="perl"> /cm/local/apps/environment-modules/4.5.3/bin/modulecmd perl</cmd_path> -->
-    <!--   <cmd_path lang="python">/cm/local/apps/environment-modules/4.5.3/bin/modulecmd python</cmd_path> -->
-    <!--   <cmd_path lang="sh">module</cmd_path> -->
-    <!--   <cmd_path lang="csh">module</cmd_path> -->
-    <!--   <modules> -->
-    <!--     <command name="purge"/> -->
-    <!--   </modules> -->
-    <!--   <modules> -->
-    <!--     <command name="load">cmake/3.23.2</command> -->
-    <!--     <command name="load">pre-module</command> -->
-    <!--     <command name="load">post-module</command> -->
-    <!--     <command name="load">openmpi</command> -->
-    <!--     <command name="load">zlib/1.2.12-ics</command> -->
-    <!--     <command name="unload">hdf5</command> -->
-    <!--     <command name="load">hdf5/1.13.2-ics</command> -->
-    <!--     <command name="load">netcdf-fortran/4.6.0</command> -->
-    <!--     <command name="load">slurm</command> -->
-    <!--   </modules> -->
-    <!-- </module_system> -->
+    <module_system type="module">
+      <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path>
+      <init_path lang="python">/cm/local/apps/environment-modules/current/init/python.py</init_path>
+      <init_path lang="sh">/cm/local/apps/environment-modules/current/init/sh</init_path>
+      <init_path lang="csh">/cm/local/apps/environment-modules/current/init/csh</init_path>
+      <cmd_path lang="perl"> /cm/local/apps/environment-modules/4.5.3/bin/modulecmd perl</cmd_path>
+      <cmd_path lang="python">/cm/local/apps/environment-modules/4.5.3/bin/modulecmd python</cmd_path>
+      <cmd_path lang="sh">module</cmd_path>
+      <cmd_path lang="csh">module</cmd_path>
+      <modules>
+        <command name="purge"/>
+      </modules>
+      <modules>
+        <command name="load">cmake/3.23.2</command>
+        <command name="load">pre-module</command>
+        <command name="load">post-module</command>
+        <command name="load">openmpi</command>
+        <command name="load">zlib/1.2.12-ics</command>
+        <command name="unload">hdf5</command>
+        <command name="load">hdf5/1.13.2-ics</command>
+        <command name="load">netcdf-fortran/4.6.0</command>
+        <command name="load">slurm</command>
+      </modules>
+    </module_system>
     <!-- environment variables, a blank entry will unset a variable -->
     <environment_variables>
       <env name="OMP_STACKSIZE">64M</env>
