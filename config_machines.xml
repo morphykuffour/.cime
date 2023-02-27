@@ -49,6 +49,7 @@
         <command name="load">cmake</command>
         <command name="load">cmake/3.23.2</command>
         <command name="load">openmpi</command>
+        <command name="load">intel/oneapi/2022.3</command>
         <command name="load">zlib/1.2.12-ics</command>
         <!-- <command name="unload">hdf5</command> -->
         <!-- <command name="load">hdf5/1.13.2-ics</command> -->
