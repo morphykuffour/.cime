@@ -47,8 +47,8 @@
         <command name="load">pre-module</command>
         <command name="load">post-module</command>
         <command name="load">cmake</command>
-        <!-- <command name="load">cmake/3.23.2</command> -->
-        <!-- <command name="load">openmpi</command> -->
+        <command name="load">cmake/3.23.2</command>
+        <command name="load">openmpi</command>
         <!-- <command name="load">zlib/1.2.12-ics</command> -->
         <!-- <command name="unload">hdf5</command> -->
         <!-- <command name="load">hdf5/1.13.2-ics</command> -->
@@ -60,9 +60,5 @@
       <env name="OMP_STACKSIZE">64M</env>
       <env name="MPI_TYPE_DEPTH">16</env>
     </environment_variables>
-    <!-- resource settings as defined in https://docs.python.org/2/library/resource.html -->
-    <!-- <resource_limits> -->
-    <!--   <resource name="RLIMIT_STACK">-1</resource> -->
-    <!-- </resource_limits> -->
   </machine>
 </config_machines>
