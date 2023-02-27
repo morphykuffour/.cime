@@ -53,7 +53,7 @@
         <command name="load">zlib/1.2.12-ics</command>
         <!-- <command name="unload">hdf5</command> -->
         <!-- <command name="load">hdf5/1.13.2-ics</command> -->
-        <!-- <command name="load">netcdf-fortran/4.6.0</command> -->
+        <command name="load">netcdf-fortran/4.6.0</command>
       </modules>
     </module_system>
     <!-- environment variables, a blank entry will unset a variable -->
