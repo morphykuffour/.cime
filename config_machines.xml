@@ -43,6 +43,7 @@
         <command name="purge"/>
       </modules>
       <modules>
+        <command name="load">slurm</command>
         <command name="load">cmake</command>
         <!-- <command name="load">cmake/3.23.2</command> -->
         <!-- <command name="load">pre-module</command> -->
@@ -52,7 +53,6 @@
         <!-- <command name="unload">hdf5</command> -->
         <!-- <command name="load">hdf5/1.13.2-ics</command> -->
         <!-- <command name="load">netcdf-fortran/4.6.0</command> -->
-        <!-- <command name="load">slurm</command> -->
       </modules>
     </module_system>
     <!-- environment variables, a blank entry will unset a variable -->
