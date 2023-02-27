@@ -43,9 +43,9 @@
         <command name="purge"/>
       </modules>
       <modules>
+        <command name="load">slurm/slurm/21.08.8</command>
         <command name="load">pre-module</command>
         <command name="load">post-module</command>
-        <command name="load">slurm</command>
         <command name="load">cmake</command>
         <!-- <command name="load">cmake/3.23.2</command> -->
         <!-- <command name="load">openmpi</command> -->
