@@ -5,9 +5,9 @@
     <NODENAME_REGEX>login*</NODENAME_REGEX>
     <OS>LINUX</OS>
     <COMPILERS>gnu</COMPILERS>
-    <MPILIBS>openmpi, mpi-serial</MPILIBS>
-    <CIME_OUTPUT_ROOT>/gpfs/homefs1/mok18003/CESMDATAROOT</CIME_OUTPUT_ROOT>
-    <DIN_LOC_ROOT>/gpfs/homefs1/mok18003/CESMDATAROOT/inputdata</DIN_LOC_ROOT>
+    <MPILIBS>openmpi</MPILIBS>
+    <CIME_OUTPUT_ROOT>/gpfs/homefs1/mok18003/scratch</CIME_OUTPUT_ROOT>
+    <DIN_LOC_ROOT>/gpfs/homefs1/mok18003/scratch/inputdata</DIN_LOC_ROOT>
     <DOUT_S_ROOT>/gpfs/homefs1/$USER/data/$USER/archive/$CASE</DOUT_S_ROOT>
     <BASELINE_ROOT>/gpfs/scratchfs1/$USER/ccsm_baselines</BASELINE_ROOT>
     <!--
@@ -19,17 +19,17 @@
     <SUPPORTED_BY>Morphy Kuffour</SUPPORTED_BY>
     <MAX_TASKS_PER_NODE>32</MAX_TASKS_PER_NODE>
     <MAX_MPITASKS_PER_NODE>32</MAX_MPITASKS_PER_NODE>
-    <mpirun mpilib="mpi-serial">
-      <executable/>
-    </mpirun>
+    <!-- mpirun: The mpi exec to start a job on this machine, supported values
+	 are values listed in MPILIBS above, default and mpi-serial -->
     <mpirun mpilib="default">
+      <!-- name of the exectuable used to launch mpi jobs -->
       <executable>srun</executable>
+      <!-- arguments to the mpiexec command, the name attribute here is ignored-->
       <arguments>
-        <arg name="pmi">--mpi=pmix</arg>
-        <arg name="num_tasks"> -n {{ total_tasks }}</arg>
+        <arg name="label"> --label</arg>
+        <arg name="num_tasks"> -n {{ total_tasks }} -N {{ num_nodes }}</arg>
       </arguments>
     </mpirun>
-
     <module_system type="module">
       <init_path lang="perl">/cm/local/apps/environment-modules/current/init/perl.pm</init_path>
       <init_path lang="python">/cm/local/apps/environment-modules/current/init/python.py</init_path>
