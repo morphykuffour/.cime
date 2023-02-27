@@ -48,6 +48,7 @@
         <command name="load">post-module</command>
         <command name="load">cmake</command>
         <command name="load">cmake/3.23.2</command>
+        <command name="load">ucx/1.13.1</command>
         <command name="load">zlib/1.2.12</command>
         <command name="load">openmpi/4.1.4</command>
         <command name="load">intel/oneapi/2022.3</command>
