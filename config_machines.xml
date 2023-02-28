@@ -63,6 +63,8 @@
     <environment_variables>
       <env name="OMP_STACKSIZE">64M</env>
       <env name="MPI_TYPE_DEPTH">16</env>
+      <env name="NETCDF_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf/4.9.0</env>
+      <env name="NETCDF_FORTRAN_PATH">/gpfs/sharedfs1/admin/hpc2.0/apps/netcdf-fortran/4.6.0</env>
     </environment_variables>
   </machine>
 </config_machines>
