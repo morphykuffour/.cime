@@ -4,7 +4,7 @@
     <DESC>UConn HPC CESM2.0 Port</DESC>
     <NODENAME_REGEX>login*</NODENAME_REGEX>
     <OS>LINUX</OS>
-    <COMPILERS>intel</COMPILERS>
+    <COMPILERS>gnu</COMPILERS>
     <MPILIBS>openmpi</MPILIBS>
     <CIME_OUTPUT_ROOT>/gpfs/homefs1/mok18003/scratch</CIME_OUTPUT_ROOT>
     <DIN_LOC_ROOT>/gpfs/homefs1/mok18003/scratch/inputdata</DIN_LOC_ROOT>
